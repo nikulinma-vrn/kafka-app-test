@@ -9,10 +9,5 @@ import org.springframework.stereotype.Service;
 public class ListenerService {
     //todo: Amplicode Designer -> Kafka -> @KafkaListener -> String
 
-    @KafkaListener(topics = "newTopic", containerFactory = "stringListenerFactory")
-    public void consumeString(String string) {
-        System.out.println(string);
-    }
-
 
 }
